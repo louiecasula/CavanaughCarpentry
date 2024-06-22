@@ -1,0 +1,43 @@
+footer {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    background: rgba(20, 93, 160);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinBack {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+footer a {
+    color: inherit;
+    margin-left: 0.5rem;
+    animation: none 0.4s linear forwards;
+}
+
+footer p {
+    margin: 0;
+    color: inherit;
+    margin-left: 0.4em;
+}
+
+footer a:hover {
+    animation: spin 0.4s linear forwards;
+}
