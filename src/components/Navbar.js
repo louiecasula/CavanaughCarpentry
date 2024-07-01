@@ -82,7 +82,6 @@ function Navbar() {
               textDecoration: 'none',
             }}
           >
-            Cavanaugh Carpentry
           </Typography>
           <Box 
             sx={{ 
@@ -97,10 +96,10 @@ function Navbar() {
             aria-controls="menu-appbar"
             aria-haspopup="true"
             onClick={handleOpenNavMenu}
-            color="inherit"
+            color="#826442"
             >
               <MenuIcon />
-            </IconButton>
+            </IconButton >
             <Menu
               id="menu-appbar"
               anchorEl={anchorEl}
@@ -117,9 +116,9 @@ function Navbar() {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' },
-                backgroundColor: '#2E8BC0',
+                backgroundColor: 'inherit',
                 '& .MuiPaper-root': {
-                  backgroundColor: '#2E8BC0',
+                  backgroundColor: 'inherit',
                 }
               }}
             >
@@ -130,10 +129,10 @@ function Navbar() {
                     component="a" 
                     href={`#${page.toLowerCase()}`} 
                     sx={{ 
-                      color: 'white',
-                      textDecoration: 'none',
+                      textDecoration: 'none', 
+                      color: '#826442', 
+                      margin: '0 10px',
                       fontFamily: 'inherit',
-                      textShadow: '2px 2px 4px rgba(0, 0, 0, 1)',
                       fontSize: '1.3rem',
                       fontWeight: 'bold',
                     }}>
