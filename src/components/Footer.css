@@ -5,25 +5,8 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 1.3rem;
-    background: rgba(20, 93, 160);
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes spinBack {
-    from {
-        transform: rotate(360deg);
-    }
-    to {
-        transform: rotate(0deg);
-    }
+    background: #826442;
+    color: #F5F5DC;
 }
 
 footer a {
@@ -34,10 +17,5 @@ footer a {
 
 footer p {
     margin: 0;
-    color: inherit;
     margin-left: 0.4em;
-}
-
-footer a:hover {
-    animation: spin 0.4s linear forwards;
 }

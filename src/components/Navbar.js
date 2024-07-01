@@ -8,6 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import Logo from '../images/logo.png';
 
 const pages = ['Home', 'About', 'Services', 'Contact'];
 
@@ -28,31 +29,14 @@ function Navbar() {
     <AppBar 
       position="sticky" 
       sx={{ 
-        background: 'rgba(20, 93, 160, 0.8)', 
+        background: '#F5F5DC', 
         textAlign: 'center', 
-        padding: '5px 20px' 
+        padding: '0px 50px',
+        boxShadow: 'none'
       }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'Lobster',
-              fontWeight: 'bold',
-              fontSize: '2rem',
-              letterSpacing: '0.15rem',
-              textShadow: '2px 2px 4px rgba(0, 0, 0, 1)',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            Cavanaugh Carpentry
-          </Typography>
+        <img src={Logo} alt="Cavanaugh Carpentry Logo" width="auto" height="100"/>
 
           <Box 
             sx={{ 
@@ -68,16 +52,11 @@ function Navbar() {
                   href={`#${page.toLowerCase()}`} 
                   sx={{
                     textDecoration: 'none', 
-                    color: 'inherit', 
-                    margin: '0 10px', 
+                    color: '#826442', 
+                    margin: '0 10px',
                     fontFamily: 'inherit',
-                    textShadow: '2px 2px 4px rgba(0, 0, 0, 1)',
                     fontSize: '1.3rem',
                     fontWeight: 'bold',
-                    transition: 'text-shadow 1s ease-in-out',
-                    '&:hover': {
-                      animation: 'glow 1s ease-in-out infinite alternate',
-                    },
                   }}>
                   {page}
                 </Typography>
