@@ -7,7 +7,7 @@ function App() {
     <div>
       <Navbar />
       <main>
-        <h1>Cavanaugh Carpentry</h1>
+        <h1>Welcome to Cavanaugh Carpentry, where craftsmanship meets creativity.</h1>
       </main>
       <Footer />
     </div>
