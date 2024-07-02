@@ -32,7 +32,7 @@ function Navbar() {
         background: '#F5F5DC', 
         textAlign: 'center', 
         padding: '0px 50px',
-        boxShadow: 'none'
+        boxShadow: '#3E2723 0px 0px 0px 0px 0px'
       }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -52,11 +52,11 @@ function Navbar() {
                   href={`#${page.toLowerCase()}`} 
                   sx={{
                     textDecoration: 'none', 
-                    color: '#826442', 
+                    color: '#3E2723', 
                     margin: '0 10px',
-                    fontFamily: 'inherit',
-                    fontSize: '1.3rem',
-                    fontWeight: 'bold',
+                    fontFamily: 'Crimson Text',
+                    fontWeight: '600',
+                    fontSize: '1.5rem',
                   }}>
                   {page}
                 </Typography>
@@ -78,7 +78,7 @@ function Navbar() {
               fontSize: '2rem',
               letterSpacing: '0.15rem',
               textShadow: '2px 2px 4px rgba(0, 0, 0, 1)',
-              color: 'inherit',
+              color: '#3E2723',
               textDecoration: 'none',
             }}
           >
@@ -96,9 +96,9 @@ function Navbar() {
             aria-controls="menu-appbar"
             aria-haspopup="true"
             onClick={handleOpenNavMenu}
-            color="#826442"
+            background="#3E2723"
             >
-              <MenuIcon />
+              <MenuIcon/>
             </IconButton >
             <Menu
               id="menu-appbar"
@@ -116,9 +116,9 @@ function Navbar() {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' },
-                backgroundColor: 'inherit',
+                backgroundColor: '#F5F5DC',
                 '& .MuiPaper-root': {
-                  backgroundColor: 'inherit',
+                  backgroundColor: '#F5F5DC',
                 }
               }}
             >
@@ -130,11 +130,11 @@ function Navbar() {
                     href={`#${page.toLowerCase()}`} 
                     sx={{ 
                       textDecoration: 'none', 
-                      color: '#826442', 
+                      color: '#3E2723', 
                       margin: '0 10px',
-                      fontFamily: 'inherit',
-                      fontSize: '1.3rem',
-                      fontWeight: 'bold',
+                      fontFamily: 'Crimson Text',
+                      fontSize: '1.5rem',
+                      fontWeight: '600',
                     }}>
                     {page}
                   </Typography>
