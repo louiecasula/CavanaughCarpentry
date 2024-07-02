@@ -31,12 +31,12 @@ function Navbar() {
       sx={{ 
         background: '#F5F5DC', 
         textAlign: 'center', 
-        padding: '0px 50px',
+        padding: '10px 100px',
         boxShadow: '#3E2723 0px 0px 0px 0px 0px'
       }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-        <img src={Logo} alt="Cavanaugh Carpentry Logo" width="auto" height="100"/>
+        <img src={Logo} alt="Cavanaugh Carpentry Logo" width="auto" height="80"/>
 
           <Box 
             sx={{ 
